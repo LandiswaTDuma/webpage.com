@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(images1.jpeg);
+    height: 90vh;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    margin: 20px;
+    text-align: right;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin: 35px;
+    font-family: Tahoma;
+    border: 1px;
+    padding: 10px;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+.navbar a:hover{
+    background: burlywood;
+}
+.head-content{
+    text-align: center;
+    margin-top: 70px;
+}
+.h1{
+    font-style: bold;
+    font-size: 80px;
+    font-family: "Lato", sans-serif;
+}
+.head-content img{
+    border-radius: 8%;
+    height: 400px;
+}
+.name{
+    font-size: 30px;
+    font-style: inherit;
+}
+.desc{
+    text-align: center;
+    font: 30px;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    margin: 70px;
+    flex-direction: row;
+
+}
+.flexbox img{
+    height: 200px;
+}
+.edu{
+    width: 400px;
+    text-align: center;
+}
+.edu-text{
+    color: black;
+    font-size: 26px;
+}
+.edu p{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+.bio{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    font-style: oblique;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+#contact-section{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    justify-content: space-between;
+}
+#contact-section .container h3 {
+    text-align: left;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: coral;
+    letter-spacing: 5px;
+}
+#contact-section .container p{
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6%;
+    color: seagreen;
+    letter-spacing: 3px;
+    justify-self: left;
+}
+.contact-form i.fa:hover{
+      cursor: pointer;
+      border: 2px solid #fff;
+      color: aqua;
+      text-align: right;
+}
+.contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-gap: 5px; */
+}
+.form-info{
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 2px;
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+}
+input::placeholder{
+    color: #fff;
+}
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: #fff;
+}
+textarea::placeholder{
+     color: #fff;
+}
+.submit{
+   width: 40%;
+   padding: 4px;
+   outline: none;
+   font-size: 13px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   height: 13px;
+   text-align: center;
+   cursor: pointer;
+   margin-left: 3%;
+   border: 2px solid rgb(190, 190, 190);
+}
+.submit:hover{
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    margin: 12px;
+    padding: 5px;
+}
+
+/* media queries */
+@media (max-width: 768px){
+    #contact-section .contact-form{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #contact-section .submit{
+        width: 60%;
+    }
+}
+

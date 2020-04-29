@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <title>My Portfolio</title>
+          <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about me.html">About me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="container">
+           <h1 class="brand"><span>Web</span>Design</h1>
+             <div class="wrapper">
+                 <h3>Web Design</h3>
+                 <ul>
+                     <li><i class="fa fa-loc"></1>GG317 Phenyane Str</li>
+                     <li><i class="fa fa-phone"></i>063 092 7512</li>
+                     <li><i class="fa fa-envelop"></i>landiswa.duma@younglings.africa</li>
+                 </ul>
+             </div>
+             <div class="contact">
+                 <h3>Lets get in touch</h3>
+                 <!-- @TODO - validation -->
+                 <form id="contactForm">
+                     <p>
+                         <label>Name</label>
+                         <input type="text" name="name" id="name">
+                     </p>
+                     <p>
+                         <label>Email Address</label>
+                         <input type="email" name="email" id="email">
+                     </p>
+                     <p>
+                         <label>Phone Number</label>
+                         <input type="text" name="phone" id="phone">
+                     </p>
+                     <p class="full">
+                         <label>Message</label>
+                         <textarea name="message" rows="5" id="message"></textarea>
+                     </p>
+
+                     <div class="g-recaptcha" data-sitekey="6LcebeYUAAAAAKycU4j_bgq5j1uHSFfMEMMCRbup"></div>
+
+                     <p class="full">
+                         <button type="submit">Submit</button>
+
+                     </p>
+                 </form>
+             </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
